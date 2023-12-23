@@ -1,0 +1,624 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    /* backdrop-filter: blur(2px); */
+    justify-content: space-between;
+    padding: 20px 10%;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-family: gill sans, sans-serif;
+    color: #131313;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    letter-spacing: 1.5px;
+    color: #c800ff;
+}
+
+
+nav ul {
+    padding-top: 5px;
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+nav ul li a:hover {
+    color: #c800ff;
+    transition: all 0.5s;
+
+}
+
+
+.nav-extra {
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-extra span {
+    display: block;
+    background-color: rgb(251, 251, 251);
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+.home {
+    /* background: yellow; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 7%;
+}
+
+.home .svg{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.home .content {
+    /* background: green; */
+    width: 50%;
+   
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    color: #ffb700;
+    font-family: sans-serif;
+}
+
+.home .content h2 {
+    margin-top: 5px;
+    font-size: 3rem;
+    line-height: 1;
+    transition: ease .6s;
+    -webkit-text-stroke: 2px #c800ff;
+    color: transparent;
+}
+
+
+.home .content p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-shadow: 5px 5px 3px rgba(1, 1, 3, 0.5);
+    color: #444;
+}
+
+.teks {
+    font-weight: 700;
+    color: #c51818;
+    font-family: sans-serif;
+}
+
+
+
+.home .img img {
+    width: 450px;
+    position: relative;
+    transition: ease .5s;
+}
+
+.pasfoto:hover {
+    transform: scale(1.2);
+}
+
+
+
+.home .content .cta {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #222222;
+    box-shadow: 1px 1px 6px rgba(1, 1, 1, 0.687);
+    transition: .5s;
+    z-index: 111;
+}
+
+.home .content .cta:hover {
+    background-color: #9800de;
+    color: #fff;
+}
+
+
+.icon-extra {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 40% 40% 0 0;
+    background: rgb(244, 244, 244);
+    overflow: hidden;
+}
+
+.icon-extra::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(180deg, rgba(253, 116, 255, 0.518)30%, rgba(255, 149, 239, 0)70%);
+}
+
+
+.about{
+    padding: 4rem 5% ;
+    /* height: 100vh; */
+    background: rgb(244, 244, 244);
+    
+
+}
+
+.about h2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: rgb(192, 17, 255);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.about .row .about-img {
+    flex: 1 1 5rem;
+    align-items: center;
+    background-color: green;
+    height: 500px;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.about .row .about-img img {
+    width: 400px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+.about .row .content {
+    max-width: 600px;
+    margin: 5rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #444;
+}
+
+.link{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .content .link a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c800ff;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content .link a:hover{
+    color: #fff;
+    background: #c800ff;
+}
+
+.about .content .link a img{
+    width: 30px;
+    transition: ease .5s;
+}
+
+.about .content .link a img:hover{
+    transform: scale(1.2);
+}
+
+.experience {
+    padding: 4rem 5%;
+     /* height: 100vh; */
+    background: #ffffff;
+}
+
+.experience h2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: rgb(192, 17, 255);
+}
+
+
+.experience .row {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 7%;
+    /* background-color: green; */
+}
+
+.experience .row h2{
+    color: #000;
+    margin: 0;
+    font-size: 29px;
+}
+
+.experience .row h3{
+    color: #444;
+}
+
+.experience .row p{
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.kontak{
+    padding: 4rem 5%;
+     /* height: 100vh; */
+    background: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kontak h2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: rgb(192, 17, 255);
+}
+
+.kontak .row {
+    /* background: green; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    gap: 1rem;
+}
+
+.kontak .row p{
+    color: #292929;
+}
+
+.kontak .row .card-email {
+    background-color: #c800ff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 25px;
+    width: 400px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-email a {
+    color: white;
+
+}
+
+
+footer {
+    background-color: #5b5b5b;
+    text-align: center;
+    padding: 1rem 0;
+    /* margin-top: 3rem; */
+    padding: 5rem;
+}
+
+footer .sosial {
+    padding: 1rem 0;
+
+}
+
+.sosial a {
+    color: aliceblue;
+    margin: 1rem;
+
+}
+
+.sosial a:hover,
+.nav-footer a:hover {
+    color: rgb(147, 147, 147);
+}
+
+footer .nav-footer {
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+footer .nav-footer a {
+    color: aliceblue;
+    padding: 0.7rem 0.5rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+
+.credit a {
+    color: #d03bf9;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* media queris */
+/* laptop */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .navbar2 {
+        display: none;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    nav ul {
+    
+        width: 70%;
+    }
+
+    .about .row {
+        max-width: 700px;
+    }
+
+    .about .row .about-img {
+        height: 35rem;
+        object-fit: cover;
+    }
+
+
+
+    .about .row .content p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .project p {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+/*hp */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+
+    nav .logo h3 {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        background: #ffffff50;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #f8f8f859;
+        width: 25rem;
+        height: 450%;
+        transition: 0.5s;
+        flex-direction: column;
+        opacity: 0.8;
+    }
+
+    nav ul.active {
+        right: 0;
+        opacity: 1;
+    }
+
+    nav ul li a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    nav ul li a:hover {
+        transform-origin: 0 0;
+    }
+
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .nav-extra {
+        display: flex;
+    }
+
+
+
+    .navbar2 {
+        transform: scale(1);
+    }
+
+
+    .logo {
+        left: 90px;
+    }
+
+    .home .content .cta {
+        font-size: 14px;
+        margin-top: 30px ;
+        
+    }
+    .home .content{
+        width: 300px;
+        margin-top: 50%;
+    }
+
+    .home .content p{
+        font-size: 16px;
+    }
+
+        .home .content h2{
+            font-size: 34px;
+        }
+
+    .home {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home .img img{
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+
+    .about .row {
+        flex-wrap: wrap;
+        margin-bottom: 130px;
+    }
+
+    .about .row .about-img {
+        height: 40rem;
+        margin: 0 10%;
+    }
+
+    .about .row .about-img .img{
+        width: 100%;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+
+    .project{
+        padding: 0 20%;
+    }
+
+
+    .project .row {
+        flex-direction: column;
+    }
+
+    .kontak .row .card-email {
+        width: 200px;
+        height: 30px;
+    }
+
+    .kontak .row p{
+        font-size: 16px;
+    }
+}
